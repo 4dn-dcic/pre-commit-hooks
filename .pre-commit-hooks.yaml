@@ -11,5 +11,5 @@
     entry: jupyter-cleanup
     language: python
     types: [text]
-    files: '\.ipynb$"
+    files: '\.ipynb$'
     stages: [commit, push, manual]
