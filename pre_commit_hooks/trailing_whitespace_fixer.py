@@ -3,8 +3,6 @@ from __future__ import print_function
 import argparse
 import os
 import sys
-from typing import Optional
-from typing import Sequence
 
 
 def _fix_file(filename, is_markdown):  # type: (str, bool) -> bool

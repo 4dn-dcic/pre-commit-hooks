@@ -5,3 +5,11 @@
     language: python
     types: [text]
     stages: [commit, push, manual]
+-   id: jupyter-cleanup
+    name: Clean Output Common Notebooks
+    description: This notebooks clean notebooks in common folder
+    entry: jupyter-cleanup
+    language: python
+    types: [text]
+    files: "*.ipynb"
+    stages: [commit, push, manual]
