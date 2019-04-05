@@ -22,7 +22,7 @@ def look_for_output_and_delete(file_name):
                 a_cell['execution_count'] = None  # to be converted to null
     if updated:
         with open(file_name, 'w') as json_file:
-            json.dump(content, json_file)
+            json.dump(content, json_file, indent=4)
         return True
     else:
         return False
