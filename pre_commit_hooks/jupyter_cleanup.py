@@ -38,7 +38,7 @@ def main(argv=None):
         if res == 'not json compatible':
             print('\nCAUTION')
             print('{} can not be opened as json'.format(filename))
-        if res:
+        elif res:
             print('{} output has been cleared'.format(filename))
             return_code = 1
     return return_code
