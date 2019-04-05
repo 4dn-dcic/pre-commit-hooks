@@ -2,7 +2,12 @@ from __future__ import print_function
 
 import argparse
 import os
+import json
 import sys
+
+
+def parse_for_output(file_name):
+    return('atlar')
 
 
 def main(argv=None):
@@ -11,11 +16,10 @@ def main(argv=None):
     parser.add_argument('filenames', nargs='*', help='Filenames to run on')
     args = parser.parse_args(argv)
     for filename in args.filenames:
-        print(filename)
-    try:
-        assert 'common' in filename
-    except:
-        return 1
+        res = parse_for_output(filename)
+        if res:
+            print('{} output has been cleared'.format(filename))
+            return_code = 1
     return return_code
 
 
